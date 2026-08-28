@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeepSeek Exporter · 对话导出工具（智能助手 Demo）</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #0f1220; color: #e8eaf6; min-height: 100vh; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 60px 24px; }
+  h1 { font-size: 30px; background: linear-gradient(90deg,#8ea2ff,#c78eff); -webkit-background-clip: text; color: transparent; }
+  .sub { color: #9aa3c7; margin: 10px 0 36px; line-height: 1.7; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 16px; }
+  .card { background: #1a1f36; border: 1px solid #2a3155; border-radius: 14px; padding: 20px; }
+  .card h3 { font-size: 16px; margin-bottom: 8px; color: #aab8ff; }
+  .card p { font-size: 13px; color: #8b93b8; line-height: 1.7; }
+  .notice { margin-top: 32px; padding: 14px 18px; border-left: 3px solid #4d6bfe; background: #161b30; border-radius: 8px; font-size: 13px; color: #97a0c8; line-height: 1.8; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>DeepSeek Exporter · 对话导出工具</h1>
+    <p class="sub">这是一个模拟您真实站点风格的 demo 页 —— 右下角的 💬 按钮即为智能助手。<br>实际部署时只需把一行 script 标签加到您现有页面即可，无需改动站点任何代码。</p>
+    <div class="cards">
+      <div class="card"><h3>📤 对话导出</h3><p>粘贴 DeepSeek 分享链接解析，导出为 PDF、Word、Markdown、TXT、JSON 等 7 种格式。</p></div>
+      <div class="card"><h3>🔗 续写</h3><p>上传对话记录文件，在新窗口无缝延续上一轮的逻辑、风格与语气。</p></div>
+      <div class="card"><h3>⭐ 会员套餐</h3><p>登录后每天 3 次免费解析；月卡 ¥9.9、永久 ¥29.9，支付宝直付自动到账。</p></div>
+    </div>
+    <div class="notice">📢 通告（2026/8/19）：近期正在进行网络优化，个别服务可能有短时波动。小程序端已关停，请统一使用网页版。</div>
+  </div>
+
+  <!-- ★ 就是这一行，嵌入智能助手 ★ -->
+  <script src="/widget.js"></script>
+</body>
+</html>
